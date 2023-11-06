@@ -1,0 +1,35 @@
+name: getx_clean_architecture
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  get_storage: ^2.0.3
+  intl: ^0.18.1
+  cached_network_image: ^3.2.1
+  flutter_svg: ^1.1.6
+  file_picker: ^5.2.4
+
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  lints: 2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
+    - assets/locales/
+
