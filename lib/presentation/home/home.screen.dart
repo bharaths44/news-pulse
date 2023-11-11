@@ -14,10 +14,9 @@ class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       bottomNavigationBar: BottomNavigationBarWidget(controller: controller1),
       appBar: AppBar(
-        title: Text(controller.data),
+        title: Text("News App"),
         centerTitle: true,
       ),
       body: Center(
