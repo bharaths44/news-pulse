@@ -21,11 +21,19 @@ class BottomNavigationBarWidget extends StatelessWidget {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info),
-            label: 'About',
+            icon: Icon(Icons.laptop_mac_outlined),
+            label: 'Tech',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.sports_soccer_rounded),
+            label: 'Sports',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_outlined),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined),
             label: 'Settings',
           ),
         ],
