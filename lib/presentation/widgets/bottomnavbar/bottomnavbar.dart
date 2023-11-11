@@ -14,6 +14,7 @@ class BottomNavigationBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(() {
       return BottomNavigationBar(
+        fixedColor: Colors.blue,
         currentIndex: controller.selectedIndex,
         items: const [
           BottomNavigationBarItem(
