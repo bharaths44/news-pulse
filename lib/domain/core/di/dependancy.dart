@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:getx_clean_architecture/config.dart';
 import 'package:getx_clean_architecture/infrastructure/storage/app_storage.dart';
 

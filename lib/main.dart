@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/generated/locales.g.dart';
-import 'package:getx_clean_architecture/presentation/widgets/bottomnavbar/controller/bottomnavbarcontroller.dart';
+
 
 import 'domain/core/di/dependancy.dart';
 import 'infrastructure/navigation/navigation.dart';
@@ -10,8 +10,6 @@ import 'infrastructure/navigation/routes.dart';
 
 void main() async {
   var initialRoute = await Routes.initialRoute;
-  Get.put<BottomNavigationBarController>(BottomNavigationBarController(),
-      permanent: true);
   DependencyCreator.init();
   runApp(Main(initialRoute));
 }

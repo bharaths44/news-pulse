@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:getx_clean_architecture/core/utility.dart';
 import 'package:getx_clean_architecture/domain/home/data/home_service.dart';
 import 'package:getx_clean_architecture/infrastructure/dal/services/api_service.dart';

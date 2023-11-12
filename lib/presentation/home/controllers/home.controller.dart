@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/domain/home/data/home_repository.dart';
 import 'package:getx_clean_architecture/domain/home/data/home_service.dart';
 
 class HomeController extends GetxController {
@@ -16,15 +15,7 @@ class HomeController extends GetxController {
     super.onInit();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
   void increment() => count.value++;
 

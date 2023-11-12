@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 enum Method { POST, GET, PUT, DELETE, PATCH }
 
 class ApiService extends GetConnect implements GetxService {
+  @override
   final String baseUrl;
   late Map<String, String> _headers;
 
@@ -39,7 +40,7 @@ class ApiService extends GetConnect implements GetxService {
       } else {
         throw Exception("Something Went Wrong");
       }
-    } on SocketException catch (e) {
+    } on SocketException {
       throw Exception("No Internet Connection");
     } on FormatException {
       throw Exception("Bad Response Format!");
