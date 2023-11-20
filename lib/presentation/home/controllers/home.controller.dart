@@ -1,25 +1,27 @@
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/domain/home/data/home_service.dart';
+import 'package:getx_clean_architecture/domain/news/data/news_repository.dart';
+import 'package:getx_clean_architecture/domain/news/data/model/news_model.dart';
 
 class HomeController extends GetxController {
-  final count = 0.obs;
+  final NewsRepository newsRep;
 
-  HomeService homeService = Get.find();
+  HomeController({required this.newsRep});
 
-  String data = "data";
+  final Rx<NewsModel?> newsModel = Rx<NewsModel?>(null);
+
+  Future<void> fetchWorldNews() async {
+    try {
+      final newsModel = await newsRep.getWorldNews();
+      print("In fetch worldnews");
+      print(newsModel);
+    } catch (e) {
+      print('Error fetching news articles: $e');
+    }
+  }
 
   @override
   void onInit() {
-    print("on home controller:init");
-    getHomeData();
     super.onInit();
-  }
-
-
-
-  void increment() => count.value++;
-
-  void getHomeData() async {
-    Response response = await homeService.getData();
+    fetchWorldNews();
   }
 }

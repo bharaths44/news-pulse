@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/presentation/dashboard/controller/dashboard_controller.dart';
 import 'package:getx_clean_architecture/presentation/dashboard/dashboard_screen.dart';
 
 import '../../presentation/screens.dart';
@@ -15,7 +14,7 @@ class Nav {
     ),
     GetPage(
       name: Routes.home,
-      page: () => const HomeScreen(),
+      page: () => HomeScreen(),
       binding: HomeControllerBinding(),
     ),
     GetPage(

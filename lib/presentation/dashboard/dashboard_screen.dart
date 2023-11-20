@@ -23,29 +23,29 @@ class DashBoardScreen extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Colors.grey,
+          unselectedItemColor: Colors.blueGrey,
           selectedItemColor: Colors.blue,
           currentIndex: controller.tabIndex.value,
           onTap: controller.changeTabIndex,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_sharp),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.laptop_mac_outlined),
+              icon: Icon(Icons.laptop_mac_sharp),
               label: 'Tech',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.sports_soccer_rounded),
+              icon: Icon(Icons.sports_soccer_sharp),
               label: 'Sports',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.attach_money),
+              icon: Icon(Icons.attach_money_sharp),
               label: 'Business',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings_outlined),
+              icon: Icon(Icons.person_sharp),
               label: 'Settings',
             ),
           ],

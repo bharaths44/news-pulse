@@ -1,3 +1,5 @@
 import 'package:get/get.dart';
 
-class BusinessNewsController extends GetxController {}
+class BusinessNewsController extends GetxController {
+  
+}
