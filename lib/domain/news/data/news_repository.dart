@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:getx_clean_architecture/domain/news/data/model/news_model.dart';
 import 'package:getx_clean_architecture/domain/news/data/news_service.dart';
 import 'package:getx_clean_architecture/infrastructure/dal/services/api_service.dart';
@@ -15,8 +14,7 @@ class NewsRepository extends NewsService {
       method: Method.GET,
     );
 
-    final newsModel = NewsModel.fromJson(json.decode(response.data));
-    print("REturned newsmodel");
+    final newsModel = NewsModel.fromJson(response.data);
     return newsModel;
   }
 
@@ -28,12 +26,8 @@ class NewsRepository extends NewsService {
       method: Method.GET,
     );
 
-    if (response.statusCode == 200) {
-      final newsModel = NewsModel.fromJson(json.decode(response.body));
-      return newsModel;
-    } else {
-      throw Exception('Failed to load technology news');
-    }
+    final newsModel = NewsModel.fromJson(response.data);
+    return newsModel;
   }
 
   @override
@@ -44,12 +38,8 @@ class NewsRepository extends NewsService {
       method: Method.GET,
     );
 
-    if (response.statusCode == 200) {
-      final newsModel = NewsModel.fromJson(json.decode(response.body));
-      return newsModel;
-    } else {
-      throw Exception('Failed to load sports news');
-    }
+    final newsModel = NewsModel.fromJson(response.data);
+    return newsModel;
   }
 
   @override
@@ -60,11 +50,7 @@ class NewsRepository extends NewsService {
       method: Method.GET,
     );
 
-    if (response.statusCode == 200) {
-      final newsModel = NewsModel.fromJson(json.decode(response.body));
-      return newsModel;
-    } else {
-      throw Exception('Failed to load business news');
-    }
+    final newsModel = NewsModel.fromJson(response.data);
+    return newsModel;
   }
 }

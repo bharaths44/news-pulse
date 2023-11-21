@@ -64,6 +64,8 @@ class Article {
         source: json["source"] == null ? null : Source.fromJson(json["source"]),
       );
 
+  get articles => null;
+
   Map<String, dynamic> toJson() => {
         "title": title,
         "description": description,

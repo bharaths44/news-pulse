@@ -32,27 +32,20 @@ class ApiService {
           response = await _dio.patch(url, data: params);
           break;
         default:
-          
           response = await _dio.get(url);
-          
       }
 
       if (response.statusCode == 200) {
-        
         return response;
       } else if (response.statusCode == 401) {
-        
         throw Exception("Unauthorized");
       } else if (response.statusCode == 500) {
-       
         throw Exception("Server Error");
       }
-    } on DioException catch (e) {
-      throw Exception("Dio Error: $e");
-    } on SocketException catch (e) {
-      throw Exception("No Internet Connection $e");
-    } on FormatException catch (e) {
-      throw Exception("Bad Response Format $e");
+    } on SocketException {
+      throw Exception("No Internet Connection ");
+    } on FormatException {
+      throw Exception("Bad Response Format");
     } catch (e) {
       throw Exception("Something Went Wrong $e");
     }

@@ -19,13 +19,18 @@ class HomeScreen extends StatelessWidget {
           return ListView.builder(
             itemCount: newsModel.articles?.length,
             itemBuilder: (context, index) {
-              print('Building item at index: $index');
               final newsArticle = newsModel.articles?[index];
 
-              return ListTile(
-                leading: Image.network(newsArticle?.image ?? ''),
-                title: Text(newsArticle!.title!),
-                subtitle: Text(newsArticle.description!),
+              return Card(
+                child: Container(
+                  child: ListTile(
+                    isThreeLine: true,
+                    horizontalTitleGap: 50,
+                    leading: Image.network(newsArticle?.image ?? ''),
+                    title: Text(newsArticle!.title!),
+                    subtitle: Text(newsArticle.description!),
+                  ),
+                ),
               );
             },
           );

@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/domain/news/data/news_repository.dart';
 
-import '../../../../domain/news/data/news_service.dart';
 import '../../../../presentation/home/controllers/home.controller.dart';
 
 class HomeControllerBinding extends Bindings {
