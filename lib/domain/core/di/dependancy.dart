@@ -3,7 +3,6 @@ import 'package:getx_clean_architecture/config.dart';
 import 'package:getx_clean_architecture/domain/news/data/news_repository.dart';
 import 'package:getx_clean_architecture/infrastructure/storage/app_storage.dart';
 import 'package:getx_clean_architecture/presentation/business_news/controllers/business_news_controller.dart';
-import 'package:getx_clean_architecture/presentation/sports_news/controllers/sports_news_controller.dart';
 
 import '../../../infrastructure/dal/services/api_service.dart';
 
