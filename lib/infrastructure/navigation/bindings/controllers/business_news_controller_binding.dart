@@ -6,7 +6,7 @@ class BusinessNewsBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<BusinessNewsController>(
-      () => BusinessNewsController(newsRep:Get.find<NewsRepository>()),
+      () => BusinessNewsController(newsRep: Get.find<NewsRepository>()),
     );
   }
 }

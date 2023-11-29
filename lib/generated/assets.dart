@@ -5,5 +5,4 @@ class Assets {
   static const String iconsSubtract = 'assets/icons/subtract.svg';
   static const String iconsSuccessTick = 'assets/icons/success_tick.svg';
   static const String localesEnUS = 'assets/locales/en_US.json';
-
 }

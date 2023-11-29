@@ -33,6 +33,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/news_icon.svg
+    - assets/images/bg_image.svg
     - assets/icons/
     - assets/locales/
 
