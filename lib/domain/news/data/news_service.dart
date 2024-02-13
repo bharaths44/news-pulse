@@ -23,4 +23,6 @@ abstract class NewsService {
 
   /// Calls the https://gnews.io/api/v4/top-headlines?category=healthlang=en&max=10&apikey={KEY}
    Future<NewsModel> getHealthNews();
+
+   refreshNews();
 }

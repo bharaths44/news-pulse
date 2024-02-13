@@ -25,6 +25,7 @@ class TechNewsScreen extends StatelessWidget {
 
               return NewsArticleCard(
                 imageURL: '${newsArticle?.image}',
+                url: newsArticle?.url!,
                 title: newsArticle!.title!,
                 description: newsArticle.description!,
               );

@@ -36,11 +36,19 @@ class NewsRepository extends NewsService {
 
   @override
   Future<NewsModel> getBusinessNews() async {
-    return _getNews('business', 3);
+    return _getNews('business', 4);
   }
 
   @override
   Future<NewsModel> getHealthNews() async {
-    return _getNews('health', 4);
+    return _getNews('health', 5);
+  }
+
+  @override
+  refreshNews() async {
+    getWorldNews();
+    getTechnologyNews();
+    getSportsNews();
+    getBusinessNews();
   }
 }

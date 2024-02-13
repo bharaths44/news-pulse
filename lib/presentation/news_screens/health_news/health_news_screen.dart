@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/presentation/news_screens/health_news/controllers/health_news_controller.dart';
@@ -25,6 +24,7 @@ class HealthNewsScreen extends StatelessWidget {
 
               return NewsArticleCard(
                 imageURL: '${newsArticle?.image}',
+                url: newsArticle?.url!,
                 title: newsArticle!.title!,
                 description: newsArticle.description!,
               );
