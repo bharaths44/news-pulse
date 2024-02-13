@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/presentation/sports_news/controllers/sports_news_controller.dart';
+import 'package:getx_clean_architecture/presentation/news_screens/sports_news/controllers/sports_news_controller.dart';
 
 class SportsNewsScreen extends GetView<SportsNewsController> {
   @override

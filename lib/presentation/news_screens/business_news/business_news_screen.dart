@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/presentation/business_news/controllers/business_news_controller.dart';
+import 'package:getx_clean_architecture/presentation/news_screens/business_news/controllers/business_news_controller.dart';
 import 'package:getx_clean_architecture/presentation/widget/news_card.dart';
 
 class BusinessNewsScreen extends StatelessWidget {

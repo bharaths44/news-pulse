@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:getx_clean_architecture/presentation/login/widgets/background_img.dart';
-import 'package:getx_clean_architecture/presentation/login/widgets/login_card.dart';
+import 'package:getx_clean_architecture/presentation/auth/login/widgets/background_img.dart';
+import 'package:getx_clean_architecture/presentation/auth/login/widgets/login_card.dart';
 
 class LoginScreen extends StatelessWidget {
   //final LoginController _controller = Get.find();

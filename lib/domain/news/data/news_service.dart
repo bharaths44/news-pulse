@@ -20,4 +20,7 @@ abstract class NewsService {
   ///
   /// Throws a [ServerException] for all error codes.
   Future<NewsModel> getBusinessNews();
+
+  /// Calls the https://gnews.io/api/v4/top-headlines?category=healthlang=en&max=10&apikey={KEY}
+   Future<NewsModel> getHealthNews();
 }

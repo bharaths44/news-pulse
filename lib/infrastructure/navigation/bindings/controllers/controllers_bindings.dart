@@ -3,3 +3,4 @@ export 'package:getx_clean_architecture/infrastructure/navigation/bindings/contr
 export 'package:getx_clean_architecture/infrastructure/navigation/bindings/controllers/sports_news_controller_binding.dart';
 export 'package:getx_clean_architecture/infrastructure/navigation/bindings/controllers/tech_news_controller_binding.dart';
 export 'package:getx_clean_architecture/infrastructure/navigation/bindings/controllers/dashboard_controller_binding.dart';
+export 'package:getx_clean_architecture/infrastructure/navigation/bindings/controllers/health_news_controller_binding.dart';

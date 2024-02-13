@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/presentation/dashboard/dashboard_screen.dart';
 
+
 import '../../presentation/screens.dart';
 import 'bindings/controllers/controllers_bindings.dart';
 import 'routes.dart';
@@ -28,6 +29,10 @@ class Nav {
     GetPage(
         name: Routes.techNewsScreen,
         page: () => TechNewsScreen(),
-        binding: TechNewsBinding())
+        binding: TechNewsBinding()),
+    GetPage(
+        name: Routes.healthsNewsScreen,
+        page: () => HealthNewsScreen(),
+        binding: HealthNewsBinding())
   ];
 }

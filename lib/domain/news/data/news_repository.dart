@@ -6,51 +6,39 @@ class NewsRepository extends NewsService {
   final ApiService apiService;
   NewsRepository({required this.apiService});
 
-  @override
-  Future<NewsModel> getWorldNews() async {
+  Future<NewsModel> _getNews(String category) async {
     final response = await apiService.reqst(
       url:
-          'https://gnews.io/api/v4/top-headlines?category=world&lang=en&max=10&apikey=92d4d8111149d7725abdc4e602384ce8',
+          'https://gnews.io/api/v4/top-headlines?category=$category&lang=en&max=10&apikey=92d4d8111149d7725abdc4e602384ce8',
       method: Method.GET,
     );
 
     final newsModel = NewsModel.fromJson(response.data);
     return newsModel;
+  }
+
+  @override
+  Future<NewsModel> getWorldNews() async {
+    return _getNews('world');
   }
 
   @override
   Future<NewsModel> getTechnologyNews() async {
-    final response = await apiService.reqst(
-      url:
-          'https://gnews.io/api/v4/top-headlines?category=technology&lang=en&max=10&apikey=92d4d8111149d7725abdc4e602384ce8',
-      method: Method.GET,
-    );
-
-    final newsModel = NewsModel.fromJson(response.data);
-    return newsModel;
+    return _getNews('technology');
   }
 
   @override
   Future<NewsModel> getSportsNews() async {
-    final response = await apiService.reqst(
-      url:
-          'https://gnews.io/api/v4/top-headlines?category=sports&lang=en&max=10&apikey=92d4d8111149d7725abdc4e602384ce8',
-      method: Method.GET,
-    );
-
-    final newsModel = NewsModel.fromJson(response.data);
-    return newsModel;
+    return _getNews('sports');
   }
 
   @override
   Future<NewsModel> getBusinessNews() async {
-    final response = await apiService.reqst(
-      url:
-          'https://gnews.io/api/v4/top-headlines?category=business&lang=en&max=10&apikey=92d4d8111149d7725abdc4e602384ce8',
-      method: Method.GET,
-    );
+    return _getNews('business');
+  }
 
-    final newsModel = NewsModel.fromJson(response.data);
-    return newsModel;
+  @override
+  Future<NewsModel> getHealthNews() async {
+    return _getNews('health');
   }
 }
