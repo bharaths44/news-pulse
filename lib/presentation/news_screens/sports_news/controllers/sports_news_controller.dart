@@ -12,7 +12,7 @@ class SportsNewsController extends GetxController {
 
   Future<void> fetchSportsNews() async {
     try {
-      final newsModel = await newsRep.getBusinessNews();
+      final newsModel = await newsRep.getSportsNews();
       this.newsModel.value = newsModel;
     } on Exception catch (e) {
       Utility.showErrorSnackBar('$e');
