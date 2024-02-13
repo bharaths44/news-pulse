@@ -23,8 +23,9 @@ class DashBoardScreen extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.blueGrey,
-          selectedItemColor: Colors.blue,
+          selectedItemColor: Colors.black,
           currentIndex: controller.tabIndex.value,
           onTap: controller.changeTabIndex,
           items: const [
@@ -43,10 +44,6 @@ class DashBoardScreen extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(Icons.attach_money_sharp),
               label: 'Business',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_sharp),
-              label: 'Settings',
             ),
           ],
         ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/presentation/home/controllers/home.controller.dart';
 
+import '../widget/news_card.dart';
+
 class HomeScreen extends StatelessWidget {
   final HomeController controller = Get.find<HomeController>();
 
@@ -21,16 +23,10 @@ class HomeScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               final newsArticle = newsModel.articles?[index];
 
-              return Card(
-                child: Container(
-                  child: ListTile(
-                    isThreeLine: true,
-                    horizontalTitleGap: 50,
-                    leading: Image.network(newsArticle?.image ?? ''),
-                    title: Text(newsArticle!.title!),
-                    subtitle: Text(newsArticle.description!),
-                  ),
-                ),
+              return NewsArticleCard(
+                imageURL: '${newsArticle?.image}',
+                title: newsArticle!.title!,
+                description: newsArticle.description!,
               );
             },
           );
