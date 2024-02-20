@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class LoginCard extends StatelessWidget {
   const LoginCard({super.key});
@@ -9,8 +10,8 @@ class LoginCard extends StatelessWidget {
     final String logo = 'assets/images/news_icon.svg';
     final Widget logosvg = SvgPicture.asset(logo);
     return Container(
-      height: MediaQuery.of(context).size.height * 0.40,
-      width: MediaQuery.of(context).size.width * 0.85,
+      height: Get.size.height * 0.50,
+      width: Get.size.width * 0.85,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(7),
@@ -27,8 +28,11 @@ class LoginCard extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(45, 10, 45, 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
+            height: 150,
+            width: 150,
             child: logosvg,
           ),
           const Divider(

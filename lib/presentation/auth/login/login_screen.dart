@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:getx_clean_architecture/presentation/auth/login/widgets/background_img.dart';
 import 'package:getx_clean_architecture/presentation/auth/login/widgets/login_card.dart';
+import 'package:getx_clean_architecture/presentation/auth/login/widgets/login_options.dart';
+import 'package:getx_clean_architecture/presentation/auth/login/widgets/no_account.dart';
+import 'package:getx_clean_architecture/presentation/auth/login/widgets/or_sign_in_with.dart';
 
 class LoginScreen extends StatelessWidget {
   //final LoginController _controller = Get.find();
@@ -18,16 +21,18 @@ class LoginScreen extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          BgImage(),
-          LoginCard(),
-          Positioned(
-            left: 45,
-            right: 45,
-            bottom: 100,
-            child: Container(
-                decoration: BoxDecoration(border: Border.all()),
-                child: Text("Or Sign in with")),
-          )
+          LoginBgImage(),
+          SafeArea(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                LoginCard(),
+                SigninWith(),
+                LoginOptions(),
+                NoAccount(),
+              ],
+            ),
+          ),
         ],
       ),
     );
