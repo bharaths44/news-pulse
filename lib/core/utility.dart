@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -96,30 +95,5 @@ class Utility {
         colorText: Colors.white,
         icon: SvgPicture.asset(Assets.iconsSubtract),
         borderRadius: 0);
-  }
-
-  static Future<File?> pickFile() async {
-    FilePickerResult? result =
-        await FilePicker.platform.pickFiles(allowMultiple: false);
-    if (result != null) {
-      File file = File(result.files.single.path ?? "");
-      return Future.value(file);
-    } else {
-      // User canceled the picker
-      return null;
-    }
-  }
-
-  static Future<File?> pickImage() async {
-    FilePickerResult? result = await FilePicker.platform.pickFiles(
-        allowMultiple: false,
-        allowedExtensions: ['jpg', 'JPG', 'png', 'PNG', 'jpeg', 'JPEG']);
-    if (result != null) {
-      File file = File(result.files.single.path ?? "");
-      return Future.value(file);
-    } else {
-      // User canceled the picker
-      return null;
-    }
   }
 }

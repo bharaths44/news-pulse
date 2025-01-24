@@ -9,6 +9,7 @@ import 'package:getx_clean_architecture/infrastructure/navigation/bindings/contr
 class AllBindings extends Bindings {
   @override
   void dependencies() {
+    
     HomeControllerBinding().dependencies();
     BusinessNewsBinding().dependencies();
     SportsNewsBinding().dependencies();

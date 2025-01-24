@@ -7,21 +7,25 @@ class PhoneNumForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final phoneController = PhoneController(
+      initialValue: PhoneNumber(
+        isoCode: IsoCode.IN,
+        nsn: '',
+      ),
+    );
+
     return PhoneFormField(
-      initialValue: PhoneNumber.parse('+91'),
-      validator: PhoneValidator.compose(
-          [PhoneValidator.valid(context), PhoneValidator.validMobile(context)]),
+      controller: phoneController,
+      validator: PhoneValidator.compose([
+        PhoneValidator.valid(context),
+        PhoneValidator.validMobile(context),
+      ]),
       countrySelectorNavigator: CountrySelectorNavigator.modalBottomSheet(
         height: Get.size.height * 0.4,
       ),
       enabled: true,
-      countryButtonPadding: null,
       isCountrySelectionEnabled: true,
       isCountryButtonPersistent: true,
-      showDialCode: true,
-      showIsoCodeInInput: true,
-      showFlagInInput: false,
-      flagSize: 16,
       cursorColor: Colors.white,
       style: const TextStyle(
         fontSize: 16,
@@ -29,21 +33,34 @@ class PhoneNumForm extends StatelessWidget {
         fontWeight: FontWeight.w500,
       ),
       decoration: InputDecoration(
-        border: UnderlineInputBorder(
+        border: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.white, width: 2),
         ),
-        focusedBorder: UnderlineInputBorder(
+        focusedBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.white, width: 2),
         ),
-        enabledBorder: UnderlineInputBorder(
+        enabledBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.white, width: 2),
         ),
-        disabledBorder: UnderlineInputBorder(
+        disabledBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.white, width: 2),
         ),
         hintText: 'Enter your phone number',
-        hintStyle: TextStyle(color: Colors.white),
+        hintStyle: const TextStyle(color: Colors.white70),
+        errorStyle: const TextStyle(color: Colors.redAccent),
       ),
+      onChanged: (PhoneNumber? number) {
+        // Handle phone number changes
+        if (number?.isValid() ?? false) {
+          print('Valid phone: ${number?.international}');
+        }
+      },
+      onSaved: (PhoneNumber? number) {
+        // Handle save action
+        if (number?.isValid() ?? false) {
+          print('Saved phone: ${number?.international}');
+        }
+      },
     );
   }
 }

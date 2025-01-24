@@ -5,9 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -45,3 +47,35 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+ios/build/ios/XCBuildData/PIFCache/project/PROJECT@v11_mod=d367e513e162efc0e72bbb070e706750_hash=bfdfe7dc352907fc980b868725387e98plugins=1OJSG6M1FOV3XYQCBH7Z29RZ0FPR9XDE1-json
+ios/build/ios/XCBuildData/PIFCache/project/PROJECT@v11_mod=ec3401e00e912ef404a1619cbe7026fd_hash=bfdfe7dc352907fc980b868725387e98plugins=1OJSG6M1FOV3XYQCBH7Z29RZ0FPR9XDE1-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=1e13e060df2a3bc184e8a421f0ed5760-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=4b368634bbdc3b749424726c948d6c69-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=5ba4910568d300d5fea2530846e7500a-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=5c4a77f6609d481c0896e8d02bb2b05e-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=8ad29832b79ed8c6668a81026c260c9b-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=8c83e84ba913edef1317982a6298aebe-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=8e0485d8831c5cc5dee850bb4acd0f5e-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=9cff4684ed0ff0c28789eb32d937a47f-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=57b4294e8a2f083c85ff24f94ea885a4-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=62c8b37ba054a26e13e83f78d8d21459-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=77d6e369c99723517ac6e4467cb5aa2a-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=99e8496e54ca7783996234e43d28da6c-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=161f13bc99c4d2b55aa2adc947735ece-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=645b836589d7d94921811312569f5c59-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=669b9525b87b569c75502058184ea00f-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=814b924e069d8853570e8312188224a4-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=988e7fb7c3f7e4b564a29c38a1d4af8b-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=5192aa302ddac0ebfa97d9d6044ce2fe-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=22778bbaa7fabcedf03abd78cbc53c64-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=8016859e3db314af450d40483f74d144-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=a8c412baf89c287cb30a33635c7cb633-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=b33ad592bc2d171ff914d4f52e9eeb98-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=bf42fa670c476ecbbeb55e7d1e652ff1-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=bf36205ec6d328cb85d349113230b22f-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=c0b1ad2dcdb6a55312d925bc5e74123a-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=cf48e765ca02dfdc4e26002f7c286852-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=d9b7efb942312edc964e83d154e9c82d-json
+ios/build/ios/XCBuildData/PIFCache/target/TARGET@v11_hash=edfa61a50a41fb6b776bbb17abc2ad14-json
+ios/build/ios/XCBuildData/PIFCache/workspace/WORKSPACE@v11_hash=(null)_subobjects=8fad9ab4aa95cb06a1c7a6257082297b-json
+ios/build/ios/XCBuildData/PIFCache/workspace/WORKSPACE@v11_hash=(null)_subobjects=979e70b3603065e12ba6aab3316fbc66-json
